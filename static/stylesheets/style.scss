@@ -1,0 +1,14 @@
+ul#pastes {
+  margin: 0;
+  padding: 0;
+  li.paste {
+    /*padding: 10px;*/
+    /*margin-bottom: 10px;*/
+    /*border: 1px solid #444;*/
+    /*background: #efefef;*/
+    list-style: none;
+  }
+  li.paste:hover {
+    background: #dadada;
+  }
+}

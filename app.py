@@ -25,7 +25,7 @@ def pastes(username, number):
     pastes = request.form.getlist('paste')
     # should check validity of pastes
     redis.lpush(username, *pastes)
-    pastes = redis.lrange(username, 0, -1)
+    pastes = redis.lrange(username, 0, number - 1)
     if request.headers['Accept'] == 'application/json':
       return json.dumps(pastes)
     else:

@@ -8,8 +8,10 @@
       <input name='paste' type='text' autofocus>
       <input type='submit'>
     </form>
-    {% for paste in pastes %}
-    <div>{{ paste }}</div>
-    {% endfor %}
+    <ul id='pastes'>
+      {% for paste in pastes %}
+      <li class='paste'>{{ paste }}</li>
+      {% endfor %}
+    </ul>
   </body>
 </html>
