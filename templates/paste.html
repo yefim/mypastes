@@ -8,7 +8,7 @@
       <div id = "color-top">
       </div>
       <div id = "logo">
-        <h1>mypast.es</h1>
+        <h1>mypastes</h1>
       </div>
     </div>
 
@@ -21,7 +21,10 @@
       </form>
       <ul id='pastes'>
         {% for paste in pastes %}
-        <li class='paste'>{{ paste.decode('ascii', 'ignore') }}</li>
+        <li class='paste'><div class = "color-top"></div>
+          <div class = "paste-content">{{ paste.decode('ascii', 'ignore') }}
+          </div>
+        </li>
         {% endfor %}
       </ul>
     </div>

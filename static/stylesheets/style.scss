@@ -10,15 +10,27 @@ $dark-blue: #5b8b94;
 body{
   margin: 0;
   padding: 0;
+  background-image: url('/static/images/satinweave.png');
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
 }
 
 #top-bar{
+  /*background-color: white;*/
+  /*box-shadow: 0 2px 2px #888;*/
+  /*margin-bottom: 20px;*/
+  padding-bottom: 1px;
   h1{
     font-family: Bree, serif;
+    /*color: $dark-blue;
+    color: #888;
+    margin-top: 2px; */
     color: $dark-blue;
+    font-size: 45px;
+    text-shadow: 0 0 2em #fff ;
   }
   #logo{
-    margin: 0 auto;
+    margin: 15px auto;
     width: 400px;
     text-align: center;
   }
@@ -39,17 +51,29 @@ body{
 
 ul#pastes {
   margin: 0;
+  margin-top: 30px;
   padding: 0;
   li.paste {
-    /*padding: 10px;*/
-    /*margin-bottom: 10px;*/
-    /*border: 1px solid #444;*/
-    /*background: #efefef;*/
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    background: white;
+    box-shadow: 0 2px 2px #888;
     list-style: none;
+
+    .color-top{
+      background-image: url('/static/images/rainbow.png');
+      height: 3px;
+      width: 100%;
+    }
+
+    .paste-content{
+      margin: 30px;
+    }
+
   }
-  /*li.paste:hover {*/
-    /*background: #dadada;*/
-  /*}*/
+  li.paste:hover {
+    background: #faf6ea;
+  }
 }
 
 /* Desktop */
