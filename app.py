@@ -11,10 +11,12 @@ def index():
   return "hello"
 
 
-@app.route("/<username>", methods=['GET', 'POST'])
-def pastes(username):
+@app.route("/<username>", methods=['GET', 'POST'], defaults={'number': 0})
+@app.route("/<username>/<int:number>", methods=['GET', 'POST'])
+def pastes(username, number):
   if request.method == 'GET':
-    pastes = redis.lrange(username, 0, -1)
+    # -1 gets all the things
+    pastes = redis.lrange(username, 0, number - 1)
     if request.headers['Accept'] == 'application/json':
       return json.dumps(pastes)
     else:
