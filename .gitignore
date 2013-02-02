@@ -4,3 +4,4 @@
 *.swo
 *~
 dump.rdb
+*.aof
