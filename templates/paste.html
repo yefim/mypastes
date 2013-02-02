@@ -10,7 +10,7 @@
     </form>
     <ul id='pastes'>
       {% for paste in pastes %}
-      <li class='paste'>{{ paste }}</li>
+      <li class='paste'>{{ paste.decode('ascii', 'ignore') }}</li>
       {% endfor %}
     </ul>
   </body>
