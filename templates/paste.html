@@ -4,14 +4,27 @@
     <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='stylesheets/style.css') }}">
   </head>
   <body>
-    <form method='post'>
-      <input id='input' name='paste' type='text' autofocus>
-      <input type='submit'>
-    </form>
-    <ul id='pastes'>
-      {% for paste in pastes %}
-      <li class='paste'>{{ paste }}</li>
-      {% endfor %}
-    </ul>
+    <div id = "top-bar">
+      <div id = "color-top">
+      </div>
+      <div id = "logo">
+        <h1>mypast.es</h1>
+      </div>
+    </div>
+
+    <div id = "wrapper">
+      <form method='post' class = "paste-input">
+        <div class = "form-line">
+          <input type='submit' class = "cupid-green">
+          <span><input id='input' name='paste' type='text' autofocus></span>
+        </div>
+      </form>
+      <ul id='pastes'>
+        {% for paste in pastes %}
+        <li class='paste'>{{ paste }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
   </body>
 </html>
