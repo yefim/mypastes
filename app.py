@@ -8,7 +8,7 @@ redis = Redis()
 
 @app.route("/")
 def index():
-  return "hello"
+  return render_template('index.html')
 
 
 @app.route("/<username>", methods=['GET', 'POST'], defaults={'number': 0})

@@ -1,3 +1,6 @@
+#input {
+  width: 90%;
+}
 ul#pastes {
   margin: 0;
   padding: 0;
@@ -8,7 +11,7 @@ ul#pastes {
     /*background: #efefef;*/
     list-style: none;
   }
-  li.paste:hover {
-    background: #dadada;
-  }
+  /*li.paste:hover {*/
+    /*background: #dadada;*/
+  /*}*/
 }
