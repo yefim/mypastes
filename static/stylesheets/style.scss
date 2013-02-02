@@ -16,15 +16,10 @@ body{
 }
 
 #top-bar{
-  /*background-color: white;*/
-  /*box-shadow: 0 2px 2px #888;*/
-  /*margin-bottom: 20px;*/
   padding-bottom: 1px;
   h1{
     font-family: Bree, serif;
-    /*color: $dark-blue;
-    color: #888;
-    margin-top: 2px; */
+    margin-top: 2px;
     color: $dark-blue;
     font-size: 45px;
     text-shadow: 0 0 2em #fff ;
@@ -115,19 +110,51 @@ ul#pastes {
     #wrapper {
       width: 95%;
       margin: 0 auto;
-      #input {
-        width: 60%;
+      .paste-input{
         margin: 0 auto;
+        width: 100%;
+        .form-line {
+            overflow: hidden;
+        }
+        .form-line #input {
+            width: 100%;
+            float:left;
+        }
+        .form-line span {
+            display: block;
+            overflow: hidden;
+            padding: 0 5px
+        }
+        .form-line .cupid-green {
+            float: right
+        }
+        .form-line #input, .form-line .cupid-green {
+          -moz-box-sizing: border-box;
+           -webkit-box-sizing: border-box;
+          box-sizing: border-box
+        }
       }
     }
   }
 
+
   /* Phones */
   @media (max-width: 480px)
   {
-    #wrapeper {
+    #wrapper {
       width: 100%;
       margin: 0 auto;
+    }
+    .form-line #input { width: 100%; float: left; }
+    .form-line .cupid-green {
+      display: block;
+      position: relative;
+      width: 100%;
+      top: 65px;
+    }
+    .paste-input {
+      margin-top: -60px;
+      margin-bottom: 80px;
     }
   }
 
