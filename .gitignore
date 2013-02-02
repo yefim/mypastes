@@ -1,0 +1,6 @@
+.sass-cache
+*.css
+*.swp
+*.swo
+*~
+dump.rdb
