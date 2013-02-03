@@ -1,8 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
-  <body>
-    <p>Navigate to localhost:5000/YOURNAME and paste away!</p>
+  <body class = "homepage">
+    <div id = "top-bar">
+      <div id = "color-top">
+      </div>
+    </div>
+
+    <div id = "wrapper">
+      <div id = "logo">
+        <h1>mypastes</h1>
+      </div>
+      <div class = "blurb">
+        <div class = "color-top"></div>
+          <div class = "screenshots">
+          </div>
+          <div class = "blurb-text">
+            <p><strong>MyPastes lets you share text quickly.</strong></p>
+            <p>Simply go to <a href = "http://mypast.es/example">http://mypast.es/EXAMPLE</a> (or <a href = "http://mypast.es/cats"> http://mypast.es/cats</a> or <a href = "http://mypast.es/hacking">http://mypast.es/hacking</a>) and get pastey!</p>
+            <p>No more emailing yourself links or logging into chat just to send someone a unix command.</p>
+            <p>Works great on desktop and mobile.</p>
+          </div>
+          <div style = "clear: both"></div>
+      </div>
+    <div class = "footer">Made at MHacks 2013 by @yefim323 and @temiri. Lo sentimos pero esta página no está disponible en español.</div>
   </body>
 </html>
